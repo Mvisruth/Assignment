@@ -256,8 +256,104 @@ button{
             padding: 10px 0;
         }
     }
-    .grid-content
-    {
-        background-color: #eee;
-        
+   /* Container for the section */
+section {
+    padding: 20px;
+}
+
+/* Header styling */
+.content-head h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Grid container for images */
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px;
+}
+
+/* Make images responsive */
+.grid-content img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image covers the container */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .grid-content {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for medium screens */
     }
+}
+
+@media (max-width: 992px) {
+    .grid-content {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-content {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-content {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+    }
+}
+section {
+    padding: 20px;
+}
+.content-head h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; 
+    height: 290px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+    text-align: center;
+    
+    box-sizing: border-box;
+}
+.image-container:hover .overlay {
+    opacity: 1;
+}
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
