@@ -224,32 +224,40 @@ button{
     {
         width: 100px;
     }
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            width: 100%;
+        }
     
+        .nav-links ul {
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+        }
     
-
-    .carousel-section {
-        padding: 20px;
-        background-color: #f8f9fa; /* Adjust background color */
+        .nav-links ul li {
+            margin: 10px 0;
+        }
+    
+        .menu-toggle {
+            display: block;
+        }
+    
+        .nav-links.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            padding: 10px 0;
+        }
     }
-    
-    .carousel-content {
-        text-align: center;
-        padding: 10px;
-        background-color: #fff; /* White background for contrast */
-        border-radius: 10px; /* Smooth corners */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    .grid-content
+    {
+        background-color: #eee;
+        
     }
-    
-    .carousel-content img {
-        width: 100%; /* Full-width images */
-        max-height: 300px; /* Limit height to keep aspect ratio */
-        object-fit: cover; /* Ensure image covers the area */
-        border-radius: 10px; /* Match the container's rounded corners */
-        margin-bottom: 15px; /* Space between image and text */
-    }
-    
-    .carousel-content p {
-        font-size: 1.1em;
-        color: #333; /* Dark text color */
-    }
-    
