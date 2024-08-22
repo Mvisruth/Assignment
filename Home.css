@@ -196,4 +196,60 @@ button{
             grid-template-columns: 1fr;
         }
     }
+    .Review {
+        width: 100%;
+        min-height: 350px; /* Use min-height to adapt to content */
+        background-image: url('./image/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex; /* Enable flexbox layout */
+        flex-direction: column; /* Stack children vertically */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        text-align: center; /* Center text inside */
+    }
+    
+    .icon {
+        display: flex;
+        justify-content: center; /* Center icons horizontally */
+        gap: 0.5rem; /* Space between stars */
+        margin-top: 1rem; /* Space above the icons */
+    }
+    
+    .icon i {
+        color: #fcb300; /* Star color */
+        font-size: 1.5rem; /* Adjust size as needed */
+    }
+    .google
+    {
+        width: 100px;
+    }
+    
+    
+
+    .carousel-section {
+        padding: 20px;
+        background-color: #f8f9fa; /* Adjust background color */
+    }
+    
+    .carousel-content {
+        text-align: center;
+        padding: 10px;
+        background-color: #fff; /* White background for contrast */
+        border-radius: 10px; /* Smooth corners */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+    
+    .carousel-content img {
+        width: 100%; /* Full-width images */
+        max-height: 300px; /* Limit height to keep aspect ratio */
+        object-fit: cover; /* Ensure image covers the area */
+        border-radius: 10px; /* Match the container's rounded corners */
+        margin-bottom: 15px; /* Space between image and text */
+    }
+    
+    .carousel-content p {
+        font-size: 1.1em;
+        color: #333; /* Dark text color */
+    }
     
