@@ -179,28 +179,28 @@ button{
     }
     .Review {
         width: 100%;
-        min-height: 350px; /* Use min-height to adapt to content */
+        min-height: 350px;
         background-image: url('./image/bg.jpg');
         background-size: cover;
         background-position: center;
-        display: flex; /* Enable flexbox layout */
-        flex-direction: column; /* Stack children vertically */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        text-align: center; /* Center text inside */
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+        text-align: center; 
         
     }
     
     .icon {
         display: flex;
-        justify-content: center; /* Center icons horizontally */
-        gap: 0.5rem; /* Space between stars */
-        margin-top: 1rem; /* Space above the icons */
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
     }
     
     .icon i {
-        color: #fcb300; /* Star color */
-        font-size: 1.5rem; /* Adjust size as needed */
+        color: #fcb300; 
+        font-size: 1.5rem; 
     }
     .google
     {
