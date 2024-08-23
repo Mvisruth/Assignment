@@ -279,6 +279,26 @@ button{
 .image-container:hover img {
     transform: scale(1.1);
 }
+.scale
+{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.scale image
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;   
+}
+.scale:hover .overlay {
+    opacity: 1;
+}
+/* .scale:hover img {
+    transform: scale(1.1);
+} */
+
 .bg
 {
     background-image: url('./image/bg.avif');
@@ -294,7 +314,6 @@ button{
 .office-info
 {
 margin: 60px;
-
 
 }
 .office-info, .map {
